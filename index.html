@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doce Encanto Confeitaria | Bolos, doces e tortas sob encomenda</title>
+  <meta name="description" content="Bolos, tortas, brigadeiros gourmet e doces para festas. Feitos à mão, com ingredientes selecionados. Peça pelo WhatsApp!">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CABEÇALHO -->
+  <header class="header" id="topo">
+    <div class="container header__inner">
+      <a href="#topo" class="logo">🧁 Doce <span>Encanto</span></a>
+      <nav class="nav" id="nav">
+        <a href="#produtos">Cardápio</a>
+        <a href="#sobre">Sobre nós</a>
+        <a href="#como-pedir">Como pedir</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#faq">Dúvidas</a>
+      </nav>
+      <button class="btn btn--small cart-toggle" id="abrirCarrinho" aria-label="Abrir carrinho">
+        🛒 <span id="contadorCarrinho">0</span>
+      </button>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__texto">
+          <span class="tag">Feito à mão, com carinho</span>
+          <h1>Doces que transformam <em>qualquer momento</em> em celebração</h1>
+          <p>Bolos, tortas, brigadeiros gourmet e caixas de presente feitos sob encomenda com ingredientes selecionados. Sem conservantes, só sabor de verdade.</p>
+          <div class="hero__botoes">
+            <a href="#produtos" class="btn">Ver cardápio</a>
+            <a href="#" class="btn btn--outline js-whats">Falar no WhatsApp</a>
+          </div>
+          <ul class="hero__selos">
+            <li>⭐ 4,9 de avaliação</li>
+            <li>🚚 Entrega na região</li>
+            <li>🎂 +2.000 bolos entregues</li>
+          </ul>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__circulo">🎂</div>
+          <span class="flutuante f1">🍓</span>
+          <span class="flutuante f2">🍫</span>
+          <span class="flutuante f3">🧁</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIFERENCIAIS -->
+    <section class="diferenciais">
+      <div class="container grid grid--4">
+        <div class="card-mini"><span>🌾</span><h3>Ingredientes premium</h3><p>Chocolate belga, frutas frescas e manteiga de verdade.</p></div>
+        <div class="card-mini"><span>👩‍🍳</span><h3>100% artesanal</h3><p>Cada doce é preparado na hora, do jeito que você pediu.</p></div>
+        <div class="card-mini"><span>🎨</span><h3>Personalizado</h3><p>Topos, cores e temas sob medida para sua festa.</p></div>
+        <div class="card-mini"><span>🚚</span><h3>Entrega cuidadosa</h3><p>Embalagem segura para chegar perfeito até você.</p></div>
+      </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section class="secao" id="produtos">
+      <div class="container">
+        <div class="secao__titulo">
+          <span class="tag">Nosso cardápio</span>
+          <h2>Escolha o seu favorito</h2>
+          <p>Adicione ao carrinho e finalize o pedido pelo WhatsApp em segundos.</p>
+        </div>
+
+        <div class="filtros" id="filtros">
+          <button class="filtro ativo" data-cat="todos">Todos</button>
+          <button class="filtro" data-cat="bolos">Bolos</button>
+          <button class="filtro" data-cat="tortas">Tortas</button>
+          <button class="filtro" data-cat="doces">Doces</button>
+          <button class="filtro" data-cat="presentes">Presentes</button>
+        </div>
+
+        <div class="grid grid--3" id="listaProdutos"></div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="secao secao--rosa" id="sobre">
+      <div class="container sobre">
+        <div class="sobre__visual" aria-hidden="true">🍰</div>
+        <div>
+          <span class="tag">Nossa história</span>
+          <h2>Uma paixão que nasceu na cozinha de casa</h2>
+          <p>A Doce Encanto começou com receitas de família e a vontade de adoçar a vida das pessoas. Hoje, seguimos fazendo tudo com o mesmo cuidado: pouca quantidade por vez, ingredientes frescos e muito amor em cada detalhe.</p>
+          <p>Nosso objetivo é simples: que você abra a caixa e sinta que o doce foi feito para você.</p>
+          <ul class="lista-check">
+            <li>Produção diária, sem estoque parado</li>
+            <li>Opções sem lactose e menos açúcar (sob consulta)</li>
+            <li>Atendimento próximo, do pedido à entrega</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMO PEDIR -->
+    <section class="secao" id="como-pedir">
+      <div class="container">
+        <div class="secao__titulo">
+          <span class="tag">Passo a passo</span>
+          <h2>Pedir é simples</h2>
+        </div>
+        <div class="grid grid--4 passos">
+          <div class="passo"><b>1</b><h3>Escolha</h3><p>Monte seu pedido no carrinho.</p></div>
+          <div class="passo"><b>2</b><h3>Envie</h3><p>Finalize pelo WhatsApp com um clique.</p></div>
+          <div class="passo"><b>3</b><h3>Confirme</h3><p>Combinamos detalhes, data e pagamento.</p></div>
+          <div class="passo"><b>4</b><h3>Receba</h3><p>Retire ou receba em casa, fresquinho.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="secao secao--rosa" id="depoimentos">
+      <div class="container">
+        <div class="secao__titulo">
+          <span class="tag">Quem provou, amou</span>
+          <h2>O que dizem nossos clientes</h2>
+        </div>
+        <div class="grid grid--3">
+          <blockquote class="depoimento">
+            <div class="estrelas">★★★★★</div>
+            <p>O bolo do aniversário da minha filha estava lindo e delicioso. Todos os convidados pediram o contato!</p>
+            <footer>Mariana S.</footer>
+          </blockquote>
+          <blockquote class="depoimento">
+            <div class="estrelas">★★★★★</div>
+            <p>Os brigadeiros gourmet são os melhores que já comi. Peço sempre para presentear clientes.</p>
+            <footer>Rafael T.</footer>
+          </blockquote>
+          <blockquote class="depoimento">
+            <div class="estrelas">★★★★★</div>
+            <p>Atendimento atencioso, entrega no horário e a torta de limão estava perfeita. Recomendo!</p>
+            <footer>Camila P.</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="secao" id="faq">
+      <div class="container container--estreito">
+        <div class="secao__titulo">
+          <span class="tag">Dúvidas</span>
+          <h2>Perguntas frequentes</h2>
+        </div>
+        <details class="faq">
+          <summary>Com quanta antecedência preciso encomendar?</summary>
+          <p>Recomendamos de 3 a 5 dias para bolos e tortas, e 2 dias para doces. Para datas especiais, quanto antes, melhor.</p>
+        </details>
+        <details class="faq">
+          <summary>Vocês entregam?</summary>
+          <p>Sim! Entregamos na nossa região de atendimento. O valor do frete é combinado pelo WhatsApp conforme o endereço. Também é possível retirar no local.</p>
+        </details>
+        <details class="faq">
+          <summary>Quais as formas de pagamento?</summary>
+          <p>Pix, cartão de crédito e débito. Para encomendas, pedimos um sinal para reservar a data.</p>
+        </details>
+        <details class="faq">
+          <summary>Fazem bolos personalizados?</summary>
+          <p>Fazemos! Conte o tema, as cores e o número de pessoas e criamos uma proposta sob medida.</p>
+        </details>
+        <details class="faq">
+          <summary>Tem opção sem glúten ou sem lactose?</summary>
+          <p>Temos opções sob consulta. Avise no pedido para podermos orientar com segurança.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta">
+      <div class="container">
+        <h2>Vamos adoçar o seu próximo momento?</h2>
+        <p>Peça agora e receba um atendimento rápido e personalizado.</p>
+        <a href="#" class="btn btn--branco js-whats">Fazer meu pedido no WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <a href="#topo" class="logo logo--claro">🧁 Doce <span>Encanto</span></a>
+        <p>Confeitaria artesanal. Feito com amor, servido com carinho.</p>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <p>📱 (11) 99999-9999</p>
+        <p>📍 Rua dos Doces, 123 - Sua Cidade</p>
+        <p>🕘 Seg a Sáb: 9h às 18h</p>
+      </div>
+      <div>
+        <h4>Redes sociais</h4>
+        <p><a href="#" target="_blank" rel="noopener">Instagram</a></p>
+        <p><a href="#" target="_blank" rel="noopener">Facebook</a></p>
+      </div>
+    </div>
+    <div class="footer__copy">© <span id="ano"></span> Doce Encanto Confeitaria. Todos os direitos reservados.</div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE WHATSAPP -->
+  <a href="#" class="whats-flutuante js-whats" aria-label="Falar no WhatsApp">💬</a>
+
+  <!-- CARRINHO -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="carrinho" id="carrinho" aria-label="Carrinho de compras">
+    <div class="carrinho__topo">
+      <h3>Seu pedido</h3>
+      <button id="fecharCarrinho" aria-label="Fechar carrinho">✕</button>
+    </div>
+    <div class="carrinho__itens" id="itensCarrinho"></div>
+    <div class="carrinho__rodape">
+      <div class="carrinho__total"><span>Total</span><strong id="totalCarrinho">R$ 0,00</strong></div>
+      <input type="text" id="nomeCliente" placeholder="Seu nome" autocomplete="name">
+      <input type="text" id="dataEntrega" placeholder="Data desejada (ex: 25/10)">
+      <textarea id="obsPedido" rows="2" placeholder="Observações (tema, sabor, alergias...)"></textarea>
+      <button class="btn btn--full" id="finalizarPedido">Enviar pedido pelo WhatsApp</button>
+      <button class="link-limpar" id="limparCarrinho">Limpar carrinho</button>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
